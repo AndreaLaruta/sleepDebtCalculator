@@ -1,6 +1,6 @@
-Last Changes:
-For extra practice, try these:
+Sleep Debt Calculator
+Did you know that giraffes sleep 4.6 hours a day? We humans need more than that. If we don’t sleep enough, we accumulate sleep debt. In this project we’ll calculate if you’re getting enough sleep each week using a sleep debt calculator.
 
-getActualSleepHours() could be implemented without calling getSleepHours(). Use literal numbers and the + operator to rewrite getActualSleepHours(). It should still return the total actual hours slept in the week.
+The program will determine the actual and ideal hours of sleep for each night of the last week.
 
-Some people need to sleep longer than others. Rewrite getIdealSleepHours() so that you can pass it an argument, like getIdealSleepHours(8) where 8 is the ideal hours per night. Update the call to getIdealSleepHours() in calculateSleepDebt() too.
+Finally, it will calculate, in hours, how far you are from your weekly sleep goal.
