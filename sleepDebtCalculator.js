@@ -37,8 +37,9 @@ const getActualSleepHours = () => {
   // Implicit return: the value assigned to totalSleepHours is automatically returned
   return totalSleepHours;
 };
-
+ 
 console.log(getActualSleepHours());
+
 console.log('----------------');
 
 const getIdealSleepHours = () =>{
@@ -63,3 +64,24 @@ const calculateSleepDebt = () =>{
 
 console.log(calculateSleepDebt());
 console.log('----------------');
+
+
+const getActualSleepHours2 = () => 6 + 7 + 9 + 8 + 5 + 10 + 11;
+const getIdealSleepHours2 = idealHours => idealHours * 7;
+
+/*When you call the updated function in calculateSleepDebt(), call it like this:*/
+
+const calculateSleepDebt2 = () => {
+ const actualSleepHours = getActualSleepHours2();
+  const idealSleepHours = getIdealSleepHours(8);
+  if(actualSleepHours === idealSleepHours){
+    console.log('Perfect amount of sleep');
+  }else if(actualSleepHours > idealSleepHours){
+    console.log('the user got more sleep than needed.' + 'You have oversleep ' + (actualSleepHours - idealSleepHours) + ' hrs.');
+  }else{
+    console.log('the user should get some rest.' + 'You have ' + (idealSleepHours - actualSleepHours) + ' hrs left to sleep.');
+  }
+};
+
+console.log(calculateSleepDebt2());
+
